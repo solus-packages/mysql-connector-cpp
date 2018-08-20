@@ -19,9 +19,8 @@
 </Description>
         <PartOf>programming.library</PartOf>
         <Files>
-            <Path fileType="data">/usr/BUILDINFO.txt</Path>
-            <Path fileType="library">/usr/lib64/libmysqlcppconn8.so.1</Path>
-            <Path fileType="library">/usr/lib64/libmysqlcppconn8.so.1.8.0.12</Path>
+            <Path fileType="library">/usr/lib64/libmysqlcppconn.so.7</Path>
+            <Path fileType="library">/usr/lib64/libmysqlcppconn.so.7.1.1.9</Path>
         </Files>
     </Package>
     <Package>
@@ -31,45 +30,35 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="3">mysql-connector-cpp</Dependency>
+            <Dependency release="4">mysql-connector-cpp</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/mysqlx/common.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/common/api.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/common/error.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/common/op_if.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/common/settings.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/common/util.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/common/value.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/common_constants.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/collations.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/collection_crud.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/common.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/crud.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/detail/crud.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/detail/error.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/detail/result.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/detail/row.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/detail/session.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/detail/settings.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/document.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/error.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/executable.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/mysql_charsets.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/mysql_collations.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/result.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/row.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/settings.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/devapi/table_crud.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/xapi.h</Path>
-            <Path fileType="header">/usr/include/mysqlx/xdevapi.h</Path>
-            <Path fileType="library">/usr/lib64/libmysqlcppconn8.so</Path>
+            <Path fileType="header">/usr/include/cppconn/build_config.h</Path>
+            <Path fileType="header">/usr/include/cppconn/config.h</Path>
+            <Path fileType="header">/usr/include/cppconn/connection.h</Path>
+            <Path fileType="header">/usr/include/cppconn/datatype.h</Path>
+            <Path fileType="header">/usr/include/cppconn/driver.h</Path>
+            <Path fileType="header">/usr/include/cppconn/exception.h</Path>
+            <Path fileType="header">/usr/include/cppconn/metadata.h</Path>
+            <Path fileType="header">/usr/include/cppconn/parameter_metadata.h</Path>
+            <Path fileType="header">/usr/include/cppconn/prepared_statement.h</Path>
+            <Path fileType="header">/usr/include/cppconn/resultset.h</Path>
+            <Path fileType="header">/usr/include/cppconn/resultset_metadata.h</Path>
+            <Path fileType="header">/usr/include/cppconn/sqlstring.h</Path>
+            <Path fileType="header">/usr/include/cppconn/statement.h</Path>
+            <Path fileType="header">/usr/include/cppconn/variant.h</Path>
+            <Path fileType="header">/usr/include/cppconn/version_info.h</Path>
+            <Path fileType="header">/usr/include/cppconn/warning.h</Path>
+            <Path fileType="header">/usr/include/mysql_connection.h</Path>
+            <Path fileType="header">/usr/include/mysql_driver.h</Path>
+            <Path fileType="header">/usr/include/mysql_error.h</Path>
+            <Path fileType="library">/usr/lib64/libmysqlcppconn.so</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
+        <Update release="4">
             <Date>2018-08-20</Date>
-            <Version>8.0.12</Version>
+            <Version>1.1.9</Version>
             <Comment>Packaging update</Comment>
             <Name>Bryan T. Meyers</Name>
             <Email>bmeyers@datadrake.com</Email>
