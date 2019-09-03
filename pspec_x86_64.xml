@@ -2,15 +2,15 @@
     <Source>
         <Name>mysql-connector-cpp</Name>
         <Packager>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-2.0-only</License>
         <PartOf>programming.library</PartOf>
         <Summary xml:lang="en">MySQL database connector for C++</Summary>
         <Description xml:lang="en">MySQL Connector/C++ is a MySQL database connector for C++. It lets you develop C++ applications that connect to the MySQL Server.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>mysql-connector-cpp</Name>
@@ -30,7 +30,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">mysql-connector-cpp</Dependency>
+            <Dependency release="5">mysql-connector-cpp</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/cppconn/build_config.h</Path>
@@ -56,12 +56,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-08-20</Date>
+        <Update release="5">
+            <Date>2019-09-03</Date>
             <Version>1.1.9</Version>
             <Comment>Packaging update</Comment>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
