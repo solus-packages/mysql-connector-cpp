@@ -1,8 +1,8 @@
 name       : mysql-connector-cpp
-version    : 1.1.9
-release    : 5
+version    : 8.0.20
+release    : 6
 source     :
-    - https://github.com/mysql/mysql-connector-cpp/archive/1.1.9.tar.gz : f421d3106a1b91b29a234ab145108b0f4ef882069744cb57aa492fedbba5c54e
+    - https://github.com/mysql/mysql-connector-cpp/archive/8.0.20.tar.gz : b2fb4d18548f30173176bfe5e644b0b690493e15189e48d4de6e53bf7d499631
 license    : GPL-2.0-only
 component  : programming.library
 summary    : MySQL database connector for C++
@@ -12,11 +12,9 @@ builddeps  :
     - pkgconfig(mariadb)
     - libboost-devel
 setup      : |
-    %patch -p1 < $pkgfiles/001-fix-mariadb.patch
     %cmake -DINSTALL_DOCS=/usr/share/doc/mysql-connector-cpp
 build      : |
     %make
 install    : |
     %make_install
-    rm %installroot%%libdir%/libmysqlcppconn-static.a
-    rm %installroot%/usr/{COPYING,Licenses_for_Third-Party_Components.txt,README}
+    rm %installroot%/usr/INFO*
